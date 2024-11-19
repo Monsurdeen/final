@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-bar{
+    background-color: black;
+    height: 25px;
+    width: auto;
+}
+
+.top-nav-bar>p{
+    color: white;
+    margin: 0;
+    padding-top: 5px;
+}
+
+
+.mylogo{
+    width: 10%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f1f0;
+    margin-right: 10px;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li{
+    list-style: none;
+    padding: 5px;
+    margin-right: 10px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#e56e00;
+}
+
+nav ul li a:hover{
+    color: #160101;
+    border-top: 2px solid chocolate;
+}
+
+.active {
+    color: rgba(0, 0, 0, 0.681); /* Example color */
+    font-weight: bold;
+    border-top:2px solid #e56e00;
+}
+
+.section1 {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.about-intro {
+    background: linear-gradient(to left,transparent, rgba(19, 14, 14, 0.5)), url(../asset/img/about.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid  #e56e00; /* Accent color for branding */
+    margin-bottom: 40px;
+}
+
+.about-intro h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white; /* Darker color for readability */
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-weight: lighter ;
+    font-size: 1.2em;
+    color: black; /* Medium gray for a softer look */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.about-mission {
+    background-color: #ffffff; /* Clean white background for focus */
+    padding: 50px 20px;
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Subtle border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 40px;
+    border-radius: 8px; /* Smooth corners for a polished look */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-mission h2 {
+    font-size: 2em;
+    color: #e56e00; /* Primary color to highlight the mission */
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-mission p {
+    font-size: 1.5em;
+    color: black; 
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+
+
+.about-values {
+    background-color: #f4f4f4; /* Soft background for subtle contrast */
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-values h2 {
+    font-size: 2em;
+    color:#e56e00; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-values ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left; /* Left-aligning for readability */
+}
+
+.about-values li {
+    font-size: 1.1em;
+    color: #555; /* Medium gray for readability */
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.about-values li::before {
+    content: "✓"; /* Checkmark symbol for visual impact */
+    color: #e56e00;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.about-values strong {
+    color: #333; /* Darker color for value names */
+    font-weight: 600;
+}
+
+
+.about-team {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    /* margin-top: 50px; */
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-team h2 {
+    font-size: 2em;
+    color:#e56e00; /* Primary color for title */
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center items within each grid cell */
+    
+}
+
+.team-member {
+    background-color: #f4f4f4; /* Light background for each member card */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 220px;
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%; /* Circular image for profile picture */
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666; /* Softer gray for role description */
+    margin: 0;
+}
+
+
+
+
+.about-services {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-services h2 {
+    font-size: 2em;
+    color: #e56e00; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-services p {
+        font-size: 1.1em;
+        color: #555;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+  
+}
+
+.service-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px; /* Add space between the list and the image */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    margin-top: 20px;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; /* Control the width of the list */
+    flex-grow: 1; /* Allow the list to take up available space */
+}
+
+.about-services ul li {
+    font-size: 1.1em;
+    color: #333;
+    /* margin: 10px 0; */
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+   width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.service-list li {
+    padding-left: 40px;
+    position: relative;
+    text-align: left;
+    
+}
+
+
+
+.service-img {
+    max-width: 400px;
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0; 
+    border-radius: 5px;
+    border-color: 3px solid  #e56e00;
+}
+
+.arrow{
+    position: fixed;    
+    bottom: 50px;        
+    right: 20px;          
+    font-size: 24px;      
+    cursor: pointer;      
+    color: white;       
+    z-index: 1000; 
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #e56e00;
+    
+    padding: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: pull 2s infinite;
+    
+
+}
+
+.arrow:hover {
+    transform: scale(1.1);  
+    background-color: #999; 
+    color: #fff;
+}
+
+
+
+
+

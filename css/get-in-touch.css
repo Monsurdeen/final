@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.top-nav-bar{
+    background-color: black;
+    height: 25px;
+    width: auto;
+}
+
+.top-nav-bar>p{
+    color: white;
+    margin: 0;
+    padding-top: 5px;
+}
+
+
+.mylogo{
+    width: 10%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f1f0;
+    margin-right: 10px;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li{
+    list-style: none;
+    padding: 5px;
+    margin-right: 10px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#e56e00;
+}
+
+nav ul li a:hover{
+    color: #160101;
+    border-top: 2px solid chocolate;
+}
+
+
+
+/* Get In Touch Section Styling */
+.get-in-touch {
+    background-color: #003366; /* Dark blue background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.get-in-touch h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.get-in-touch p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.get-in-touch form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.get-in-touch label {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.get-in-touch input[type="text"],
+.get-in-touch input[type="email"],
+.get-in-touch textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.get-in-touch button {
+    padding: 12px;
+    background-color: #f4b400; /* Accent color */
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-in-touch button:hover {
+    background-color: #dca600;
+}
+
+
+.arrow{
+    position: fixed;    
+    bottom: 50px;        
+    right: 20px;          
+    font-size: 24px;      
+    cursor: pointer;      
+    color: white;       
+    z-index: 1000; 
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #e56e00;
+    
+    padding: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: pull 2s infinite;
+    
+
+}
+
+.arrow:hover {
+    transform: scale(1.1);  
+    background-color: #999; 
+    color: #fff;
+}
